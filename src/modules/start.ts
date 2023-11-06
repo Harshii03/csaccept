@@ -7,7 +7,7 @@ const composer = new Composer<MyContext>();
 
 composer
   .command("start", async (ctx) => {
-    if (ctx.chat.type != "private" && ctx.match == "by_HARSHA") {
+    if (ctx.chat.type != "private" && ctx.match == "by_KK") {
       await ctx.reply("Continue setting me up in PM!", {
         reply_markup: new InlineKeyboard().url(
           "Continue",
@@ -22,7 +22,7 @@ composer
       reply_markup: new InlineKeyboard()
         .text(ctx.t("usage-help"), "helper")
         .text("Language 🌐", "setLang").row()
-        .url(ctx.t("updates"), "https://t.me/CSAdmin69_bot"),
+        .url(ctx.t("updates"), "https://t.me/+SoSdwJ3z-4QzMjI1"),
       disable_web_page_preview: true,
     });
     await addUser(ctx.from!.id);
@@ -36,7 +36,7 @@ composer.callbackQuery("mainMenu", async (ctx) => {
       reply_markup: new InlineKeyboard()
         .text(ctx.t("usage-help"), "helper")
         .text("Language 🌐", "setLang").row()
-        .url(ctx.t("updates"), "https://t.me/CSAdmin69_bot"),
+        .url(ctx.t("updates"), "https://t.me/+SoSdwJ3z-4QzMjI1"),
       disable_web_page_preview: true,
     },
   );
